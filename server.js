@@ -8,7 +8,7 @@ const sendHourlyWeatherReports = require('./src/utils/sendHourlyWeatherReports')
 const errorHandler = require('./src/utils/errorHandler');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 27017;
 
 mongoose.connect('mongodb://localhost:27017/weather-api', {
   useNewUrlParser: true,
